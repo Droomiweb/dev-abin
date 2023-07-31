@@ -1,0 +1,422 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #292929;
+    overflow-y: hidden;
+}
+.navbar-big ul{
+  position: absolute;
+  bottom: 50%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transform: rotate(-90deg) translateY(-70px);
+}
+.navbar-big ul li{
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.navbar-big ul li::before{  
+  content: '';
+  display: block;
+  width: 0%;
+  height: 4px;
+  background-color: #fff;
+  transform: translatey(27px);
+  border-radius: 8px;
+  transition: 0.2s;
+}
+.navbar-big ul li:hover{
+  color: #8C52FF;
+}
+.navbar-big ul li:hover::before{
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+.content{
+  position: absolute;
+  left: 20%;
+  top: 10%;
+  width: 800px;
+  height: 470px;
+  flex-shrink: 0;
+  border-radius: 43px;
+  border: 1px solid rgba(140, 82, 255, 0.48);
+  background: rgba(140, 82, 255, 0.15);
+  box-shadow: 2px 1px 4px 0px rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(25px);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 1000;
+  }
+  .content::-webkit-scrollbar { width: 0 !important }
+
+.content div {
+  padding: 10px;
+  color: #FFF;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.content div .par{
+  color: #FFF;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+
+
+.around{
+  position: absolute;
+  bottom: 13%;
+  left: 10%;
+}
+
+.around img{
+  transform: translate(-65px,30px );
+  animation: rot infinite;
+  animation-duration: 5s;
+  animation-delay:0s;
+  height: 100px;
+  width: 100px;
+}
+
+.around svg:hover + path{
+  fill: #8C52FF;
+}
+
+@keyframes rot{
+
+  100%{
+    transform:translate(-65px,30px ) rotate(360deg);
+  }
+}
+
+
+.circle1,.circle2{
+  content: '';
+  width: 200px;
+  height: 200px;
+  background-color: #D9D9D9;
+  border-radius: 50%;
+  z-index: 10;
+}
+.circle1{
+  transform: translate(450px,50px);
+  animation: cir1 60s infinite;
+}
+.circle2{
+  transform: translate(600px,90px);
+  animation: cir2 90s infinite;
+}
+
+@keyframes cir1{
+  40%{
+    transform: translate(800px,190px)  ;
+  }
+  80%{
+    transform: translate(900px,190px) rotate(120deg) scale(1.3);
+  }
+}
+@keyframes cir2{
+  50%{
+    transform: translate(300px,200px)  rotate(90deg);
+    bottom: 30%;
+  }
+  
+}
+
+.contact-nav{
+  color: white;
+  position: absolute;
+  bottom: 45%;
+  right: -5%;
+  transform: rotate(90deg);
+}
+
+.contact-nav img{
+  height: 30px;
+  width: 30px;
+  transform: rotate(-90deg);
+  margin: 10px;
+  filter: sepia(100%);
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+a:hover,a:focus,a:active{
+  text-decoration: none;
+  color:#8C52FF;
+}
+
+
+
+
+
+
+.progrss .pro-cont{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.progrss .pro-cont p{
+  
+  font-size: 35px;
+}
+.progrss .pro-cont .bar{
+  content: '';
+  display: flex;
+  align-items: center;
+  width: 60%;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.progrss .pro-cont .bar:before{
+  content: '';
+  display: block;
+  padding: 0;
+  margin-left: -9px;
+  margin-right: -9px;
+  height: 20px;
+  background-color: #8C52FF;
+  border-radius: 10px;
+}
+
+.progrss .pro-cont .pro-html::before{
+  width: 104%;
+}
+
+.progrss .pro-cont .pro-css::before{
+  width: 100%;
+}
+
+.progrss .pro-cont .pro-js::before{
+  width: 85%;
+}
+
+.progrss .pro-cont .pro-jq::before{
+  width: 90%;
+}
+
+.progrss .pro-cont .pro-react::before{
+  width: 87%;
+}
+
+.progrss .pro-cont .pro-three::before{
+  width: 80%;
+}
+
+.progrss .pro-cont .pro-node::before{
+  width: 50%;
+}
+
+.progrss .pro-cont .pro-fire::before{
+  width: 89%;
+}
+
+.progrss .pro-cont .pro-figma::before{
+  width: 99%;
+}
+
+.progrss .pro-cont .pro-vann::before{
+  width: 80%;
+}
+
+.progrss .pro-cont .pro-boot::before{
+  width: 95%;
+}
+
+
+
+
+
+.links p{
+  padding: 10px 20px;
+  font-size: 25px;
+}
+
+
+.par form{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: -39px;
+  margin-left: 20px;
+}
+.par form input, .par form textarea{
+ width: 300px;
+ height: 40px;
+ border-radius: 7px;
+ outline: none;
+ border: none;
+ background-color: transparent;
+ border-bottom: 5px solid #8C52FF;
+ font-size: 20px;
+ padding: 5px;
+}
+.par form textarea{
+  height: 80px;
+ }
+ 
+ .par form input::placeholder, .par form textarea::placeholder{
+    font-size: 20px;
+    color: white;
+ }
+ .par form button{
+  width: 300px;
+  height: 40px;
+  border-radius: 7px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: #8C52FF;
+  color: white;
+ }
+
+
+
+
+
+
+
+
+
+ .navbar ul{
+  position: absolute;
+  top: 0%;
+  right: 10%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navbar ul li{
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.navbar ul li::before{  
+  content: '';
+  display: block;
+  width: 0%;
+  height: 4px;
+  background-color: #fff;
+  transform: translatey(27px);
+  border-radius: 8px;
+  transition: 0.2s;
+}
+.navbar ul li:hover{
+  color: #8C52FF;
+}
+.navbar ul li:hover::before{
+  width: 100%;
+}
+
+
+
+@media(max-width: 500px){
+
+  .content{
+    position: absolute;
+    left: 3%;
+    top: 10%;
+    width: 400px;
+    height: 520px;
+    }
+
+    .circle1,.circle2{
+      content: '';
+      transform: translate(-10px,90px)  ;
+      width: 120px;
+      height: 120px;
+      background-color: #D9D9D9;
+      border-radius: 50%;
+      z-index: 10;
+    }
+    
+
+
+    @keyframes cir1{
+      40%{
+        transform: translate(100px,190px)  ;
+      }
+      80%{
+        transform: translate(100px,190px) rotate(120deg) scale(1.3);
+      }
+    }
+    @keyframes cir2{
+      50%{
+        transform: translate(100px,120px)  rotate(90deg);
+        bottom: 30%;
+      }
+      
+    }
+
+    .content div {
+      font-size: 35px;
+    }
+    
+    .content div .par{
+      font-size: 20px;
+    }
+    .progrss .pro-cont p{
+  
+      font-size: 18px;
+    }
+    
+  .links p{
+    font-size: 18px;
+  }
+
+  .contact-nav{
+    bottom: 0%;
+    right: 30%;
+    transform: rotate(0deg);
+  }
+  
+  .contact-nav img{
+    height: 30px;
+    width: 30px;
+    transform: rotate(0deg);
+  }
+
+  .navbar-big ul{
+    position: absolute;
+    top: 1%;
+    left: 6%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transform: rotate(0deg);
+  }
+
+}
