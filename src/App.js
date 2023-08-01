@@ -43,12 +43,11 @@ function Ico(){
 function App() {
   return (
    <>
-   <BrowserRouter >
     <Nav />
     <section className="content">
       <div>
       <Routes>
-          <Route index path="/Content" element={<Welcome />} />
+          <Route index path='/' element={<Welcome />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />} />
@@ -65,7 +64,7 @@ function App() {
         <img src={round} />
       </div>
       <Ico/>
-      </BrowserRouter>
+      
    </>
   );
   }
