@@ -48,7 +48,7 @@ function App() {
     <section className="content">
       <div>
       <Routes>
-          <Route index element={<Welcome />} />
+          <Route index path="/Content" element={<Welcome />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />} />

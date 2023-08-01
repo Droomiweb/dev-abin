@@ -7,11 +7,11 @@ const Nav =()=>{
 <nav className="navbar-big">
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="./Content">Home</Link>
           </li>
-          <li><Link to="/about">about</Link></li>
-          <li><Link to="/projects">projects</Link></li>
-          <li><Link to="/contact">contact</Link></li>
+          <li><Link to="./about">about</Link></li>
+          <li><Link to="./projects">projects</Link></li>
+          <li><Link to="./contact">contact</Link></li>
         </ul>
       </nav>
       <Outlet />
