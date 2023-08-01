@@ -7,7 +7,7 @@ import Nav from './Nav';
 import Mob from './mob';
 
 import round from './round.png'
-import Welcome from './Content'
+import Welcome from './dev-abin'
 
 import linkedin from './icons/linked.png'
 import whatsapp from './icons/whatsapp.png'
@@ -47,7 +47,7 @@ function App() {
     <section className="content">
       <div>
       <Routes>
-          <Route index path='/' element={<Welcome />} />
+          <Route index path='/dev-abin' element={<Welcome />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />} />
