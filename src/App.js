@@ -28,7 +28,7 @@ const DefaultRoute = () => {
   const currentLocation = window.location.pathname;
 
   // If the current location is the root URL ("/"), show the Welcome component
-  if (currentLocation === '/' || currentLocation === 'https://droomiweb.github.io/dev-abin/') {
+  if (currentLocation === '/' || currentLocation === 'https://droomiweb.github.io/dev-abin') {
     return <Welcome />;
   }
 
