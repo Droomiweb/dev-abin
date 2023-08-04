@@ -47,7 +47,7 @@ function App() {
     <section className="content">
       <div>
       <Routes>
-          <Route index path='/dev-abin' element={<Welcome />} />
+          <Route path='/dev-abin' element={<Welcome />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />} />
