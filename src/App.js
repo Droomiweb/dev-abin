@@ -1,7 +1,7 @@
 
 import './App.css';
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 import Nav from './Nav';
 import Mob from './mob';
@@ -47,7 +47,8 @@ function App() {
     <section className="content">
       <div>
       <Routes>
-          <Route path='/dev-abin' element={<Welcome />} />
+      <Route path="/" element={<Welcome />} index />
+        <Route path="/dev-abin" element={<Welcome />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />} />
