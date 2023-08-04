@@ -1,7 +1,7 @@
 
 import './App.css';
 import ReactDOM from "react-dom/client";
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link,Navigate } from 'react-router-dom';
 
 import Nav from './Nav';
 import Mob from './mob';
@@ -24,7 +24,17 @@ import About from './about';
 import Contact from './contact';
 import Projects from './project';
 
+const DefaultRoute = () => {
+  const currentLocation = window.location.pathname;
 
+  // If the current location is the root URL ("/"), show the Welcome component
+  if (currentLocation === '/' || currentLocation === 'https://droomiweb.github.io/dev-abin/') {
+    return <Welcome />;
+  }
+
+  // Otherwise, redirect to the root URL
+  return <Navigate to="/" />;
+};
 function Ico(){
   return(
     <div className="contact-nav">
